@@ -1,0 +1,23 @@
+/*
+/* SECTION PARTNER */
+
+.partner {
+    text-align: center;
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 15l15 15H0V15zM15 0l15 15V0H15z' fill='%239C92AC' fill-opacity='0.18' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.partner div {
+    display: inline-block;
+    width: 5%;
+    vertical-align: middle;
+    margin: 0 1rem;
+    text-align:center;
+    padding: 0.5rem 0 0 0;
+}
+
+.partner img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}

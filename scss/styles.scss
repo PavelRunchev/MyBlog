@@ -1,0 +1,122 @@
+@import "reset.css";
+
+@import "https://use.fontawesome.com/releases/v5.4.2/css/all.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+@import "typography.css";
+@import "navigation.css";
+@import "footer.css";
+@import "gallery.css";
+@import "login.css";
+@import "choose.css";
+@import "partner.css";
+@import "myBlog.css";
+@import "inner-post.css";
+@import "support.css";
+
+/*
+/* SECTION BOX */
+.box {
+    background: url("/assets/cannock-chase-staffordshire-uk-1920x500.jpg");
+    background-size: cover;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h2 {
+    margin-top: 0;
+    padding-top: 1rem;
+    text-align: content;
+    text-shadow: 2px 2px 4px rgba(0,0,0, 1);
+    color: rgb(0, 247, 201);
+}
+
+.box p {
+    width: 50%;
+    padding: 0.5rem 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0, 1);
+}
+
+.box .main ul li a {
+    background: linear-gradient(to right, rgba(0, 81, 255, 0.4), rgba(255, 253, 111, 0.4), rgba(0, 225, 255, 0.507));
+    text-shadow: 2px 2px 4px rgba(0,0,0, 1);
+    text-decoration: none;
+    border: 2px solid rgb(0, 247, 201);
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: rgb(0, 247, 201);
+    margin-bottom: 1em;
+}
+
+.box .main ul li a:hover {
+    border: 2px solid rgb(255, 178, 165);
+    color: rgb(255, 178, 165);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    background: linear-gradient(to right, rgba(0, 81, 255, 0), rgba(255, 253, 111, 0), rgba(0, 225, 255, 0));
+}
+
+.inner-post,
+#contacts,
+#about,
+#support {
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 15l15 15H0V15zM15 0l15 15V0H15z' fill='%239C92AC' fill-opacity='0.18' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.inner-post h1,
+#contacts h1,
+#about h1,
+#support h1 {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+    .box p {
+        width: 60%;
+        padding: 0.5rem 1rem;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .box h2 {
+        font-size: 26px;
+    }
+
+    .box p {
+        width: 70%;
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+    }
+
+    .box .main ul li a {
+        padding: 0.3rem 0.7rem;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .box h2 {
+        font-size: 20px;
+    }
+
+    .box p {
+        width: 80%;
+        padding: 0.5rem 1rem;
+        font-size: 12px;
+    }
+
+    .box .main ul li a {
+        padding: 0.3rem 0.7rem;
+        font-size: 16px;
+    }
+}
+
+
+

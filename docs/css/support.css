@@ -1,0 +1,24 @@
+
+#support .inner-suport {
+    text-align: center;
+    padding: 3em;
+    color: rgb(0, 247, 201);
+    text-shadow: 2px 2px 4px rgba(0,0,0, 1);
+}
+
+.fa-edge,
+.fa-css3-alt {
+    color: rgb(2, 158, 255);
+}
+
+.fa-html5 {
+    color: rgb(222,86,33);
+}
+
+.fa-chrome {
+    color: rgb(255,205,66);
+}
+
+.fa-firefox {
+    color: rgb(4,111,237);
+}
