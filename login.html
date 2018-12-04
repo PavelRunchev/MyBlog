@@ -1,0 +1,32 @@
+---
+layout: home
+title: Login Section
+permalink: /login/
+---
+
+<section class="login">
+    <h1>{{ page.title }}</h1>
+    <form action="" method="get">
+        <fieldset class="sign-in">
+            <legend>Login Form</legend>
+            <p class="field">
+                <label for="username">Username</label>
+                <span class="input">
+                    <input type="text" name="username" id="username" placeholder="username"/>
+                    <span class="action"></span>
+                    <i class="fas fa-user"></i>
+                </span>
+            </p>
+            <p class="field">
+                <label for="password">Password</label>
+                <span class="input">
+                    <input type="password" name="password" id="password" placeholder="password"/>
+                    <span class="action"></span>
+                    <i class="fas fa-key"></i>
+                </span>
+            </p>
+            <input type="submit" value="Sign in" id="submit" class="button">
+            <i class="fas fa-sign-in-alt"></i>
+        </fieldset>
+    </form>
+</section>

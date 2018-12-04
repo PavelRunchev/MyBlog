@@ -1,0 +1,22 @@
+---
+layout: home
+---
+
+
+<section class="box">
+    <h2>Demo this my Blog</h2>
+    
+        <p>Travel Booking is a free WordPress theme to create travel online booking website for tour and travel operators
+            and companies. You can add trips, destinations, and trip types, feature travel activities, highlight your
+            specialties and allow visitors to book the trips. </p>
+    
+    <nav class="main">
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</section>
