@@ -3,7 +3,7 @@ title: MyBlog
 email: pavel.runchev@gmail.com
 description: It is my blog!
  
-baseurl: "MyBlog" # the subpath of your site, e.g. /blog
+baseurl: "/MyBlog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 skype: raidersgb
 twitter_username: PavelRunchev
