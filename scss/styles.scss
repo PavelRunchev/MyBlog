@@ -17,7 +17,7 @@
 /*
 /* SECTION BOX */
 .box {
-    background: url("/assets/cannock-chase-staffordshire-uk-1920x500.jpg");
+    background: url("{{ site.baseurl }}/assets/cannock-chase-staffordshire-uk-1920x500.jpg");
     background-size: cover;
     color: #FFF;
     display: flex;
