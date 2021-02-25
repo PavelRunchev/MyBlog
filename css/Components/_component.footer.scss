@@ -1,0 +1,259 @@
+
+.c-footer {
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('../assets/life-storage-moving-to-los-angeles-1-1920x500.jpg');
+	background-size: cover;
+
+	&-partners-container {
+		width: 100%;
+		background: linear-gradient(rgba(207,207,207,0.35), rgba(207,207,207,0.35));
+		display: grid;
+		grid-template-columns: 100px 100px 100px 100px;
+		grid-template-rows: 130px;
+		justify-content: space-around;
+		align-items: center;
+
+		@include for-phone-only {
+			grid-template-columns: 100px 100px;
+			grid-template-rows: 130px 130px;
+		}
+	}
+
+	&-partners-logo {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+	}
+
+	&-container {
+		width: 100%;
+		margin: 0 auto;
+		display: grid;
+		justify-content: space-around;
+		align-items: center;
+		padding: 2% 0;
+
+		@include for-phone-only {
+			grid-template-columns: 92%;
+			grid-template-rows: 200px 200px 200px 200px;
+			row-gap: 30px;
+			margin-bottom: 5%;
+		}
+
+		@include for-tablet-portrait-up {
+			grid-template-columns: 40% 40%;
+			grid-template-rows: 200px 200px;
+		}
+
+		@include for-tablet-landscape-up {
+			grid-template-columns: 35% 35%;
+			grid-template-rows: 200px 200px;
+		}
+
+		@include for-desktop-up {
+			grid-template-columns: 300px 300px 300px 300px;
+			grid-template-rows: 200px;
+		}
+	}
+
+	&-consult {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
+
+	&-partners {
+		@include for-phone-only {
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+		}
+
+		@include for-tablet-portrait-up {
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+		}
+
+		@include for-tablet-landscape-up {
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+		}
+
+		@include for-desktop-up {
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+		}
+	}
+
+	&-development {
+		@include for-phone-only {
+			grid-column: 1 / 2;
+			grid-row: 3 / 4;
+		}
+
+		@include for-tablet-portrait-up {
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+		}
+
+		@include for-tablet-landscape-up {
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+		}
+
+		@include for-desktop-up {
+			grid-column: 3 / 4;
+			grid-row: 1 / 2;
+		}
+	}
+
+	&-subscribe {
+		@include for-phone-only {
+			grid-column: 1 / 2;
+			grid-row: 4 / 5;
+		}
+
+		@include for-tablet-portrait-up {
+			grid-column: 2 / 3;
+			grid-row: 2 / 3;
+		}
+
+		@include for-tablet-landscape-up {
+			grid-column: 2 / 3;
+			grid-row: 2 / 3;
+		}
+
+		@include for-desktop-up {
+			grid-column: 4 / 5;
+			grid-row: 1 / 2;
+		}
+	}
+
+	&-consult,
+	&-partners,
+	&-development,
+	&-subscribe {
+		@include flex-card-vertical-container;
+		align-items: flex-start;
+	}
+
+	&-partners-icons-container {
+		display: grid;
+		grid-template-columns: 50px 50px 50px 50px 50px;
+		grid-template-rows: 50px;
+		column-gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.fab {
+		background-color: $third-color;
+		border-radius: 50%;
+		padding: 11px;
+		font-size: 28px;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+
+	&-development-container {
+		width: 100%;
+		text-align: left;
+	}
+
+	&-dev-container {
+		margin-top: 2%;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+	}
+
+	&-development-logo {
+		width: 35px;
+		height: auto;
+		border-radius: 50%;
+		border: 1px solid $third-color;
+		background-color: $third-color;
+	}
+
+	&-span {
+		color: $third-color;
+		font-size: 16px;
+	}
+
+	&-subscribe-p {
+		font-size: 14px;
+	}
+
+	&-subscribe-form {
+		display: flex;
+		flex-flow: row wrap;
+		margin: 4% 0;
+	}
+
+	&-subscribe-input {
+		outline: none;
+		padding: 10px 15px;
+		border: 1px solid transparent;
+		background-color: $third-color;
+		border-bottom-left-radius: 3px;
+		border-top-left-radius: 3px;
+		flex-grow: 1;
+		border-right: none;
+		transition: all ease-out 0.3s;
+
+		&::placeholder {
+			color: $secondary-color;
+		}
+
+		&:-ms-input-placeholder {
+			color: $secondary-color;
+		}
+
+		&::-ms-input-placeholder {
+			color: $secondary-color;
+		}
+
+		&:focus {
+			border-color: $secondary-color;
+			color: $secondary-color;
+		}
+	}
+
+	&-subscribe-btn {
+		cursor: pointer;
+		padding: 10px 15px;
+		outline: none;
+		border: none;
+		border: 1px solid $secondary-color;
+		border-bottom-right-radius: 3px;
+		border-top-right-radius: 3px;
+		background-color: $secondary-color;
+		color: $third-color;
+		transition: all ease-out 0.3s;
+
+		&:hover {
+			color: $secondary-color;
+			background-color: $third-color;
+			border-color: $secondary-color;
+		}
+	}
+
+	.e-h4 {
+		text-align: left;
+	}
+
+	&-copyright-container {
+		width: 100%;
+		padding: 2% 0;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		color: $third-color
+	}
+
+	&-copyright-paragraph {
+		@include for-phone-only {
+			font-size: 14px;
+		}
+	}
+}

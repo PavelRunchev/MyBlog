@@ -1,0 +1,127 @@
+
+.c-nav-under {
+	width: 60%;
+	position: fixed;
+	background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
+	@include box-shadow-black;
+	
+	z-index: 99;
+	opacity: 0;
+	display: none;
+	justify-content: space-around;
+	align-items: center;
+	transition: all ease-out 0.4s;
+
+	@include for-phone-only {
+		width: 100%;
+		grid-template-columns: 94%;
+		grid-template-rows: 165px 165px 175px;
+		column-gap: 3%;
+		top: 339px;
+		left: calc(50% - 50%);
+	}
+
+	@include for-tablet-portrait-up {
+		width: 100%;
+		grid-template-columns: 240px 240px 240px;
+		grid-template-rows: 200px;
+		top: 339px;
+		left: calc(50% - 50%);
+	}
+
+	@include for-tablet-landscape-up {
+		width: 100%;
+		grid-template-columns: 240px 240px 240px;
+		grid-template-rows: 200px;
+		top: 73px;
+		left: calc(50% - 50%);
+	}
+
+	@include for-desktop-up {
+		width: 60%;
+		top: 73px;
+		left: calc(50% - 30%);
+	}
+
+	&-container:nth-of-type(1) {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
+
+	&-container:nth-of-type(2) {
+		@include for-phone-only {
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+		}
+		
+	}
+
+	&-container:nth-of-type(3) {
+		@include for-phone-only {
+			grid-column: 1 / 2;
+			grid-row: 3 / 4;
+		}
+		
+	}
+
+	&-container {
+		height: 70%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: top;
+
+		@include for-phone-only {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&-title {
+		color: $secondary-color;
+		margin-bottom: 5%;
+	}
+
+	&-title-line {
+		width: 100%;
+		height: 1px;
+		background-color: $primary-color;
+		margin-bottom: 3%;
+	}
+
+	&-list {
+		list-style: none;
+	}
+
+	&-item {
+		position: relative;
+	}
+
+	&-link {
+		cursor: pointer;
+		display: inline-block;
+		outline: none;
+		text-decoration: none;
+		color: $primary-color;
+		transition: all ease-out 0.2s;
+
+		&:hover {
+			color: $secondary-color;
+			transform: translateX(10px);
+		}
+	}
+
+	.fa-caret-right {
+		opacity: 0;
+		position: absolute;
+		top: 3px;
+		left: -10px;
+		color: $primary-color;
+		transition: all ease-out 0.2s;
+	}
+
+	&-link:hover ~ .fa-caret-right {
+		opacity: 1;
+		color: $secondary-color;
+		transform: translateX(10px);
+	}
+}

@@ -1,52 +1,60 @@
-<footer>
-    
-    <article class="consult">
-        <h4>Consulting</h4>
-        <div class="avenue">
-            <p><i class="fas fa-map-marker-alt"></i>&nbsp; Tintqva Avenue 15-17</p>
-            <p>Sofia, 1113 BG.</p>
-        </div>
-        <div class="week">
-            <p><i class="far fa-clock"></i>&nbsp; Mon - Sat 9.00 - 22.00 </p>
-            <p>Sunday CLOSED</p>
-        </div>
-        <div class="phone">
-            <p><i class="fas fa-phone"></i>&nbsp; 02 047 557 Free call</p>
-        </div>
-        <div class="logo">
-            <span><i class="fab fa-facebook"></i></span>
-            <span><i class="fab fa-twitter"></i></span>
-            <span><i class="fab fa-linkedin-in"></i></span>
-            <span><i class="fab fa-youtube"></i></span>
-            <span><i class="fab fa-github"></i></span>
-            <span><i class="fab fa-gitlab"></i></span>
-        </div>
-    </article>
-    <article class="links">
-            <h4>Contact Links</h4>
-            <div class="contacts">
-                <a href="{{ site.baseurl }}/about">About</a>
-                <a href="{{ site.baseurl }}/contacts">Contacts</a>
-                <a href="#">Services</a>
-                <a href="#">Careers</a>
-                <a href="#">Testing</a>
-                <a href="{{ site.baseurl }}/support">Support</a>
+<footer class="c-footer">
+    <div class="c-footer-partners-container">
+        <img class="c-footer-partners-logo" src="{{ site.baseurl }}/assets/site.png" alt="logo"/>
+        <img class="c-footer-partners-logo" src="{{ site.baseurl }}/assets/one-eleven.png" alt="logo"/>
+        <img class="c-footer-partners-logo" src="{{ site.baseurl }}/assets/web-design-logo.jpg" alt="logo"/>
+        <img class="c-footer-partners-logo" src="{{ site.baseurl }}/assets/san-diego-logo.png" alt="logo"/>
+    </div>
+
+    <div class="c-footer-container">
+        <article class="c-footer-consult">
+            <h4 class="e-h4">Consulting</h4>
+            <div class="c-footer-consult-container">
+                <p class="e-p"><i class="fas fa-map-marker-alt"></i>&nbsp; Tintqva Avenue 15-17</p>
+                <p class="e-p"><i class="fas fa-globe-europe"></i>&nbsp; Sofia, 1113 BG.</p>
+                <p class="e-p"><i class="far fa-clock"></i>&nbsp; Mon - Sat 9.00 - 22.00 </p>
+                <p class="e-p"><i class="fas fa-calendar-week"></i>&nbsp; Sunday CLOSED</p>
+                <p class="e-p"><i class="fas fa-phone"></i>&nbsp; 02 047 557 Free call</p>
             </div>
-    </article>
-    <article class="blog">
-            <h4>For us</h4>
-        <div>
-            <p>Proudly hosted by  GitHub.</p>
-        </div>
-        <div class="university">
-            <img src="{{ site.baseurl }}/assets/SoftUni-Logo.png" alt="logo"/>
-            <span> &nbsp; SoftUni</span>
-        </div>
-        <div>
-            <p>&copy; 2018 My Blog All right reserved!</p>
-        </div>
-        <div class="license">
-                <p><i class="fa fa-balance-scale"></i>&nbsp; MIT License.</p>
+        </article>
+
+        <article class="c-footer-partners">
+            <h4 class="e-h4">Partners</h4>
+            <div class="c-footer-partners-icons-container">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
             </div>
-    </article>
+        </article>
+
+        <article class="c-footer-development">
+            <h4 class="e-h4">Development</h4>
+            <div class="c-footer-development-container">
+                <div class="c-footer-dev-container">
+                    <img class="c-footer-development-logo" src="{{ site.baseurl }}/assets/SoftUni-Logo.png" alt="logo"/>
+                    <span class="c-footer-span">&nbsp; Scrum Master - SoftUni</span>
+                </div>
+                <div class="c-footer-dev-container">
+                    <img class="c-footer-development-logo" src="{{ site.baseurl }}/assets/raiders-logo.jpg" alt="logo"/>
+                    <span class="c-footer-span">&nbsp; Dev Team - RAIDERS Studio</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="c-footer-subscribe">
+            <h4 class="e-h4">Subscribe</h4>
+            <div class="c-footer-subscribe-container">
+                <p class="e-p c-footer-subscribe-p">Make sure you dont miss interesting happening by joining our beautiful simple web blog design!</p>
+                <form class="c-footer-subscribe-form">
+                    <input type="email" class="c-footer-subscribe-input" placeholder="Your Email"></input>
+                    <button class="c-footer-subscribe-btn">Subscibe</button>
+                </form>
+            </div>
+        </article>
+    </div>
+   
+    <div class="c-footer-copyright-container">
+        <div class="e-p c-footer-copyright-paragraph">&copy; 2018-2021 My Blog. All Rights Reserved!</div>
+    </div>
 </footer>

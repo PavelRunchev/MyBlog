@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %} My Blog</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.baseurl }}/assets/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css" type="text/css" />
+    <style>
+        .c-error-page { padding: 10% 0;}
+        .c-error-page-error { color: red; text-align: center; font-size: 80px; font-weight: bold; }
+        .c-error-page-title { color: red; text-align: center; font-size: 60px; font-weight: bold; }
+        .c-error-page-content { text-align: center; font-size: 26px; }
+    </style>
 </head>
 <body class="{% if page.type %}{{page.type}} {% endif %}{% if page.title %}{{ page.title | slugify }}{% else %}home{% endif %}">
+        {% include navigation.html %}
+        {% include navigation-under.html %}
         {% include header.html %}
-        
-        {% if page.title != 'Gallery Blog' %}
-            {% include choose.html %}
-        {% endif %}
-
-        {% include middle.html %}
+        {% include growImage.html %}
         <main>
             {{ content }}
         </main>
-        
-
         {% include footer.html %}
     
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/my-navigation.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/toastr.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/subscribe.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/my-label-effect.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/my-gallery.js"></script>
 </body>
 </html>

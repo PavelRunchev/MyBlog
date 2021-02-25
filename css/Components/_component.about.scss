@@ -1,0 +1,27 @@
+
+.c-about {
+	padding: 10% 0;
+
+	.u-header-container {
+		width: 153px;
+	}
+
+	&-img {
+		width: 100%;
+		height: auto;
+	}
+
+	&-team-container {
+		margin-top: 2%;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-team-logo {
+		width: 50px;
+		height: 55px;
+		border-radius: 50%;
+	}
+}

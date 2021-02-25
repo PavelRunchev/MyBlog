@@ -1,0 +1,206 @@
+
+.c-navigation {
+	width: 100%;
+	display: grid;
+	position: sticky;
+	top: -1px;
+	background: linear-gradient(rgba(255,255,255, 0.95), rgba(255,255,255,0.95));
+	z-index: 99;
+
+	@include for-phone-only {
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto;
+	}
+
+	@include for-tablet-landscape-up {
+		grid-template-columns: 150px 1fr;
+		grid-template-rows: auto;
+	}
+
+	@include for-tablet-down {
+		grid-template-columns: 100%;
+		grid-template-rows: 100px auto;
+	}
+
+	@include for-desktop-up {
+		grid-template-columns: 150px 20% 1fr 20%;
+		grid-template-rows: auto;
+	}
+	
+
+	&-logo-container {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		width: 100%;
+		padding: 10px 10px 0 10px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&-logo-img {
+		width: 60px;
+		height: auto;
+	}
+
+	&-btn-bars {
+		@include for-tablet-landscape-up {
+			display: none;
+		}
+
+		@include for-tablet-down {
+			display: block;
+		}
+
+		cursor: pointer;
+		outline: none;
+		border: none;
+		font-size: 30px;
+		padding: 20px;
+		background-color: transparent;
+		color: $primary-color;
+		transition: color ease-out 0.3s;
+
+		&:hover {
+			color: $third-color;
+		}
+	}
+
+	&-list {
+		width: 100%;
+		padding: 20px 0;
+		list-style: none;
+		
+
+		@include for-phone-only {
+			display: none;
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+			flex-flow: column wrap;
+			padding: 20px;
+		}
+
+		@include for-tablet-portrait-up {
+			display: none;
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+			flex-flow: column wrap;
+			padding: 20px;
+		}
+
+	
+
+		@include for-tablet-landscape-up {
+			display: flex;
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+			padding: 20px 0 0 0;
+			flex-flow: row wrap;
+			justify-content: space-around;
+		}
+
+		@include for-tablet-down {
+			display: none;
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+			flex-flow: column wrap;
+			padding: 20px;
+		}
+
+		@include for-desktop-up {
+			display: flex;
+			grid-column: 3 / 4;
+			grid-row: 1 / 2;
+			padding: 20px 0 0 0;
+			flex-flow: row wrap;
+			justify-content: space-around;
+		}
+	}
+
+	&-item {
+		opacity: 0;
+
+		@include for-tablet-portrait-up {
+			height: 40px;
+			background-color: transparent;
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			animation: nav-animation-show-in 0.3s ease-out 0s forwards;
+			transition: all ease-out 0.1s;
+
+			&:hover {
+				background-color: transparent;
+			}
+
+			@for $i from 1 through 5 {
+				&:nth-child(#{$i}){
+				  animation-delay: $i * 0.3s;
+				}
+			}
+		}
+
+		@include for-tablet-down {
+			height: 40px;
+			background-color: transparent;
+			transition: all ease-out 0.3s;
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			animation: nav-animation-show-in 0.2s ease-out 0s forwards;
+
+			&:hover {
+				background-color: $third-color;
+			}
+
+			@for $i from 1 through 5 {
+				&:nth-child(#{$i}){
+				  animation-delay: $i * 0.05s;
+				}
+			}
+		}
+
+		@include for-tablet-landscape-up {
+			height: 40px;
+			background-color: transparent;
+			transition: all ease-out 0.3s;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+
+	&-link {
+		display: inline-block;
+		cursor: pointer;
+		text-decoration: none;
+		font-size: 22px;
+		font-weight: bold;
+		color: $primary-color;
+		transition: all ease-out 0.3s;
+
+		&:hover {
+			color: $secondary-color;
+		}	
+	}
+
+	&-hover-border {
+		width: 0;
+		position: relative;
+		bottom: 0;
+		right: 50%;
+		height: 2px;
+		background-color: $secondary-color;
+		transition: 0.4s;
+	}
+
+	&-link:hover ~ &-hover-border {
+		@include for-tablet-landscape-up {
+			width: 100%;
+			transition: 0.4s;
+			right: 0;
+		}
+	}
+}

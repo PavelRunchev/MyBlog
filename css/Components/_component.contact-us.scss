@@ -1,0 +1,19 @@
+
+.c-contact-us {
+	width: 100%;
+	padding: 10% 0;
+
+	.u-header-container {
+		width: 185px;
+	}
+
+	&-container {
+		width: 350px;
+		display: block;
+		margin: 10% auto;
+		
+		@include for-phone-only {
+			width: 100%;
+		}
+	}
+}

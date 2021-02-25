@@ -23,5 +23,9 @@
   "repository": "",
   "author": "PavelRunchev",
   "license": "MIT",
-  "bugs": ""
+  "bugs": "",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "firebase-tools": "^9.5.0"
+  }
 }

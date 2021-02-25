@@ -1,0 +1,25 @@
+
+.e-p {
+	color: $third-color;
+	text-align: left;
+
+	@include for-phone-only {
+		font-size: 16px;
+	}
+
+	@include for-tablet-portrait-up {
+		font-size: 14px;
+	}
+
+	@include for-tablet-landscape-up {
+		font-size: 14px;
+	}
+
+	@include for-desktop-up {
+		font-size:  14px;
+	}
+
+	@include for-big-desktop-up {
+		font-size: 16px;
+	}
+}

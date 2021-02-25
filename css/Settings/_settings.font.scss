@@ -1,0 +1,51 @@
+@import url('../assets/fontawesome/css/all.min.css');
+@import url('../assets/fontawesome/css/brands.min.css');
+@import url('../assets/fontawesome/css/fontawesome.min.css');
+@import url('../assets/fontawesome/css/regular.min.css');
+@import url('../assets/fontawesome/css/solid.min.css');
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../assets/fonts/Open_Sans/OpenSans-Light.eot') format('embedded-opentype');
+	src: url('../assets/fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+	src: url('../assets/fonts/Open_Sans/OpenSans-Light.woff') format('woff');
+	src: url('../assets/fonts/Open_Sans/OpenSans-Light.woff2') format('woff2');
+	src: url('../assets/fonts/Open_Sans/OpenSans-SemiBold.eot') format('embedded-opentype');
+	src: url('../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
+	src: url('../assets/fonts/Open_Sans/OpenSans-SemiBold.woff') format('woff');
+	src: url('../assets/fonts/Open_Sans/OpenSans-SemiBold.woff2') format('woff2');
+	src: url('../assets/fonts/Open_Sans/OpenSans-Regular.eot') format('embedded-opentype');
+	src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+	src: url('../assets/fonts/Open_Sans/OpenSans-Regular.woff') format('woff');
+	src: url('../assets/fonts/Open_Sans/OpenSans-Regular.woff2') format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('../assets/fonts/Rubik/Rubik-Light.eot') format('embedded-opentype');
+	src: url('../assets/fonts/Rubik/Rubik-Light.ttf') format('truetype');
+	src: url('../assets/fonts/Rubik/Rubik-Light.woff') format('woff');
+	src: url('../assets/fonts/Rubik/Rubik-Light.woff2') format('woff2');
+	src: url('../assets/fonts/Rubik/Rubik-Bold.eot') format('embedded-opentype');
+	src: url('../assets/fonts/Rubik/Rubik-Bold.ttf') format('truetype');
+	src: url('../assets/fonts/Rubik/Rubik-Bold.woff') format('woff');
+	src: url('../assets/fonts/Rubik/Rubik-Bold.woff2') format('woff2');
+	src: url('../assets/fonts/Rubik/Rubik-Black.eot') format('embedded-opentype');
+	src: url('../assets/fonts/Rubik/Rubik-Black.ttf') format('truetype');
+	src: url('../assets/fonts/Rubik/Rubik-Black.woff') format('woff');
+	src: url('../assets/fonts/Rubik/Rubik-Black.woff2') format('woff2');
+	src: url('../assets/fonts/Rubik/Rubik-Regular.eot') format('embedded-opentype');
+	src: url('../assets/fonts/Rubik/Rubik-Regular.ttf') format('truetype');
+	src: url('../assets/fonts/Rubik/Rubik-Regular.woff') format('woff');
+	src: url('../assets/fonts/Rubik/Rubik-Regular.woff2') format('woff2');
+	font-display: swap;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,a,button {
+	font-family: 'Rubik', sans-serif;
+}
