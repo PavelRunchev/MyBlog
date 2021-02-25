@@ -1,0 +1,144 @@
+
+.c-header {
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../assets/life-storage-moving-to-los-angeles-1-1920x500.jpg');
+	background-size: cover;
+	padding: 3% 0;
+
+	&-h1 {
+		font-size: 60px;
+		font-weight: bold;
+		color: $third-color;
+		text-align: center;
+		margin-bottom: 3%;
+
+		@include for-phone-only {
+			font-size: 40px;
+		}
+	}
+
+	&-container {
+		width: 100%;
+		display: grid;
+		
+		align-items: center;
+		justify-content: space-around;
+
+		@include for-phone-only {
+			grid-template-columns: 92%;
+			grid-template-rows: 350px 350px 350px;
+			row-gap: 20px;
+		}
+
+		@include for-tablet-portrait-up {
+			grid-template-columns: 28% 28% 28%;
+			grid-template-rows: 300px;
+		}
+
+		@include for-tablet-landscape-up {
+			grid-template-columns: 290px 290px 290px;
+			grid-template-rows: 300px;
+		}
+
+		@include for-desktop-up {
+			grid-template-columns: 1fr 300px 300px 300px 1fr;
+			grid-template-rows: 300px;
+			column-gap: 30px;
+		}
+
+		@include for-big-desktop-up {
+			grid-template-columns: 1fr 300px 300px 300px 1fr;
+			grid-template-rows: 300px;
+			column-gap: 50px;
+		}
+	}
+
+	&-blog-1 {
+		@include for-phone-only {
+			grid-column: 1 / 2;
+			grid-row: 1 / 2;
+		}
+
+		@include for-tablet-portrait-up {
+			grid-column: 1 / 2;
+			grid-row: 1 / 2;
+		}
+	
+		@include for-desktop-up {
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+		}
+		
+		@include for-big-desktop-up {
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+		}
+	}
+
+	&-blog-2 {
+		@include for-phone-only {
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+		}
+
+		@include for-tablet-portrait-up {
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+		}
+
+		@include for-desktop-up {
+			grid-column: 3 / 4;
+			grid-row: 1 / 2;
+		}
+		
+		@include for-big-desktop-up {
+			grid-column: 3 / 4;
+			grid-row: 1 / 2;
+		}
+	}
+
+	&-blog-3 {
+		@include for-phone-only {
+			grid-column: 1 / 2;
+			grid-row: 3 / 4;
+		}
+
+		@include for-tablet-portrait-up {
+			grid-column: 3 / 4;
+			grid-row: 1 / 2;
+		}
+
+		@include for-desktop-up {
+			grid-column: 4 / 5;
+			grid-row: 1 / 2;
+		}
+		
+		@include for-big-desktop-up {
+			grid-column: 4 / 5;
+			grid-row: 1 / 2;
+		}
+	}
+
+	&-blog-link {
+		text-decoration: none;
+		width: 100%;
+		height: 100%;
+		border-radius: 3px;
+		border: 2px solid $third-color;
+		background-color: transparent;
+		@include box-shadow-white;
+		transition: all ease-out 0.3s;
+
+		&:hover {
+			background-color: rgba(238,122,7,0.25);
+			border: 2px solid $secondary-color;
+			transform: scale(0.99);
+			@include box-shadow-white-none;
+		}
+	}
+
+	.e-p {
+		color: $third-color;
+		line-height: 22px;
+	}
+}

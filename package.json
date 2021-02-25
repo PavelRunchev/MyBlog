@@ -23,5 +23,8 @@
   "repository": "",
   "author": "PavelRunchev",
   "license": "MIT",
-  "bugs": ""
+  "bugs": "",
+  "dependencies": {
+    "browser-sync": "^2.26.14"
+  }
 }

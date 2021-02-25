@@ -1,0 +1,20 @@
+
+
+.e-h3 {
+	text-align: center;
+	color: $fourth-color;
+	font-weight: 300;
+	margin: 5% 0;
+
+	@include for-phone-only {
+		font-size: 24px;
+	}
+
+	@include for-tablet-portrait-up {
+		font-size: 28px;
+	}
+
+	@include for-tablet-landscape-up {
+		font-size: 34px;
+	}
+}

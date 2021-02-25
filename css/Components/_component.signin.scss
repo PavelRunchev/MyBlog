@@ -1,0 +1,135 @@
+
+.c-sign-in {
+	width: 100%;
+	padding: 5% 0;
+
+	.u-header-container {
+		width: 125px;
+	}
+
+	&-form {
+		width: 400px;
+		background-color: transparent;
+		display: block;
+		margin: 5% auto;
+		@include box-shadow-black-2;
+		border-radius: 3px;
+		padding: 3%;
+
+		@include for-phone-only {
+			width: 100%;
+		}
+	}
+
+	&-input-container {
+		position: relative;
+		margin: 15% 0 3% 0;
+	}
+
+	&-input {
+		width: 90%;
+		outline: none;
+		border-radius: 3px;
+		padding: 10px 20px;
+		border: 2px solid transparent;
+		font-size: 18px;
+		font-weight: 200;
+		border-bottom: 1px solid $primary-color;
+		margin-left: 25px;
+		color: $primary-color;
+	}
+
+	&-label {
+		position: absolute;
+		font-size: 16px;
+		font-weight: 300;
+		top: 12px;
+		left: 50px;
+		color: $primary-color;
+		transition: 0.4s;
+	}
+
+	&-input:focus ~ &-label {
+		color: $secondary-color;
+		transform: scale(0.9) translate(-20px, -30px);
+	}
+
+	.fa-user-alt,
+	.fa-lock {
+		position: absolute;
+		top: 12px;
+		left: 0;
+		font-size: 18px;
+		color: $primary-color;
+		transition: all ease-out 0.3s;
+	}
+
+	&-input:focus ~ .fas {
+		color: $secondary-color;
+	}
+
+	&-input-border {
+		width: 0;
+		height: 2px;
+		background-color: $secondary-color;
+		position: absolute;
+		left: 26px;
+		top: 42px;
+		transition: 0.4s;
+	}
+
+	&-input:focus ~ &-input-border {
+		width: 90%;
+	}
+
+	&-forgot-password {
+		font-size: 14px;
+		font-weight: 300;
+		font-style: italic;
+		color: $fourth-color;
+		transition: color ease-out 0.3s;
+
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+
+	&-btn {
+		cursor: pointer;
+		display: block;
+		outline: none;
+		border: none;
+		margin: 15% auto;
+		padding: 1rem 8rem;
+		border-radius: 2rem;
+		background-color: $secondary-color;
+		border: 1px solid $secondary-color;
+		color: #ffff;
+		font-size: 18px;
+		transition: all ease-out 0.3s;
+
+		&:hover {
+			color: $secondary-color;
+			background-color: #ffff;
+		}
+
+		@include for-phone-only {
+			padding: 0.8rem 6rem;
+		}
+	}
+
+	&-content {
+		text-align: center;
+		font-size: 14px;
+	}
+
+	&-to-sign-up-link {
+		display: inline-block;
+		color: $secondary-color;
+		transition: all ease-out 0.3s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}

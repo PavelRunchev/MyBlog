@@ -1,0 +1,12 @@
+
+.o-p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	text-align: left;
+	padding: 2% 10%;
+
+	@include for-phone-only {
+		padding: 2% 0 2% 3%;
+	}
+}

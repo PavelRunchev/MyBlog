@@ -1,0 +1,47 @@
+
+.o-container {
+	background-color: $third-color;
+	display: grid;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+
+	@include for-phone-only {
+		grid-template-columns: 96%;
+	}
+
+	@include for-tablet-portrait-up {
+		grid-template-columns: 85%;
+	}
+
+	@include for-tablet-landscape-up {
+		grid-template-columns: 75%;
+	}
+
+	@include for-desktop-up {
+		grid-template-columns: 60%;
+	}
+
+	@include for-big-desktop-up {
+		grid-template-columns: 50%;
+	}
+}
+
+.o-primary-container {
+	width: 100%;
+	background-color: #ffff;
+}
+
+.o-secondary-container {
+	width: 100%;
+}
+
+.o-third-container {
+	padding-bottom: 5%;
+}
+
+.o-header-container {
+	display: block;
+	margin: 0 auto;
+}
+
