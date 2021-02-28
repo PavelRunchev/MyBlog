@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts Page -  My Blog</title>
+    <title>Login Section -  My Blog</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
@@ -20,7 +20,7 @@
         .c-error-page-content { text-align: center; font-size: 26px; }
     </style>
 </head>
-<body class="contacts-page">
+<body class="login-section">
         
 
 <navigation class="c-navigation">
@@ -35,23 +35,23 @@
     
     <ul class="c-navigation-list">
         <li class="c-navigation-item">
-            <a class="c-navigation-link" href="./MyBlog/about">About Us</a>
+            <a class="c-navigation-link" href="./about">About Us</a>
             <span class="c-navigation-hover-border"></span>
         </li>
         <li class="c-navigation-item">
-            <a class="c-navigation-link" href="./MyBlog/contacts">Contacts</a>
+            <a class="c-navigation-link" href="./contacts">Contacts</a>
             <span class="c-navigation-hover-border"></span>
         </li>
         <li class="c-navigation-item">
-            <a class="c-navigation-link" href="./MyBlog/gallery">Gallery</a>
+            <a class="c-navigation-link" href="./gallery">Gallery</a>
             <span class="c-navigation-hover-border"></span>
         </li>
         <li class="c-navigation-item">
-            <a class="c-navigation-link" href="#">Products <i class="fas fa-angle-down"></i></a>
+            <a class="c-navigation-link" href="./gallery">Products <i class="fas fa-angle-down"></i></a>
             <span class="c-navigation-hover-border"></span>
         </li>
         <li class="c-navigation-item">
-            <a class="c-navigation-link" href="./MyBlog/signin">Sign in</a>
+            <a class="c-navigation-link" href="./signin">Sign in</a>
             <span class="c-navigation-hover-border"></span>
         </li>
     </ul>
@@ -173,46 +173,31 @@
 	</div>
 </section>
         <main>
-            <section class="o-container">
-    <div class="o-primary-container c-contact-us">
-        <div class="o-header-container u-header-container">
-            <h2 class="o-h2">Contact Us</h2>
-            <span class="o-h2-border"></span>
-        </div>
-
-        <div class="o-third-container c-contact-us-container">
-            <p class="o-p">
-                <i class="fas fa-user-tie"></i>&nbsp;  Owner: <span class="o-span">Pavel Runchev</span>
+            <section class="login">
+    <h1>Login Section</h1>
+    <form action="" method="get">
+        <fieldset class="sign-in">
+            <legend>Login Form</legend>
+            <p class="field">
+                <label for="username">Username</label>
+                <span class="input">
+                    <input type="text" name="username" id="username" placeholder="username"/>
+                    <span class="action"></span>
+                    <i class="fas fa-user"></i>
+                </span>
             </p>
-            <p class="o-p">
-                <i class="fas fa-user"></i>&nbsp;  username: <span class="o-span">RAIDERS</span>
+            <p class="field">
+                <label for="password">Password</label>
+                <span class="input">
+                    <input type="password" name="password" id="password" placeholder="password"/>
+                    <span class="action"></span>
+                    <i class="fas fa-key"></i>
+                </span>
             </p>
-            <p class="o-p">
-                <i class="fas fa-phone-square"></i>&nbsp;  GSM: <span class="o-span">0879999436</span>
-            </p>
-            <p class="o-p">
-                <i class="fas fa-envelope"></i>&nbsp;  email: <span class="o-span">pavel.runchev@gmail.com</span>
-            </p>
-            <p class="o-p">
-                <i class="fab fa-facebook"></i>&nbsp;  facebook: <span class="o-span">Pavel Runchev</span>
-            </p>
-            <p class="o-p">
-                <i class="fab fa-github-square"></i>&nbsp;  github: <span class="o-span">Pavel Runchev</span>
-            </p>
-            <p class="o-p">
-                <i class="fab fa-gitlab"></i>&nbsp;  gitlab: <span class="o-span">Pavel</span>
-            </p>
-            <p class="o-p">
-                <i class="fab fa-linkedin"></i>&nbsp; linkedin: <span class="o-span">Pavel Runchev</span>
-            </p>
-            <p class="o-p">
-                <i class="fab fa-skype"></i>&nbsp; skype: <span class="o-span">raidersgb</span>
-            </p>
-            <p class="o-p">
-                <i class="fas fa-laptop"></i>&nbsp; working env: <span class="o-span">RAIDERS team</span>
-            </p>
-        </div>
-    </div>
+            <input type="submit" value="Sign in" id="submit" class="button">
+            <i class="fas fa-sign-in-alt"></i>
+        </fieldset>
+    </form>
 </section>
         </main>
         <footer class="c-footer">
